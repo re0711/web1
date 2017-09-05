@@ -5,6 +5,6 @@
 .gitignore.bak
 /bbs/.settings
 /bbs/build/classes
-/pic
+/pic/
 
  
