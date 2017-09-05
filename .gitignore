@@ -1,5 +1,7 @@
-.settings
 .classpath
 .tern-project
 .project
+/bbs/.settings
+/bbs/build/classes
+/bbs/config
  
