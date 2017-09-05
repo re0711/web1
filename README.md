@@ -1,10 +1,10 @@
 ## 简介
 这是一个基于SSM架构的简易bbs论坛。
 ## 环境
-开发环境：Eclipse_mars
-数据库管理工具：mysql5.5
-Jdk版本：1.7
-服务器:tomcat 7
+开发环境：Eclipse_mars  
+数据库管理工具：mysql5.5  
+Jdk版本：1.7  
+服务器:tomcat 7  
 ## 已实现的主要功能
 登录 登出 注册  
 加载首页（查看分类，帖子）   
