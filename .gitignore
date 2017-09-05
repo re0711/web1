@@ -1,8 +1,8 @@
 .classpath
 .tern-project
 .project
-.gitignore
-.gitignore.bak
+/.gitignore
+/.gitignore.bak
 /bbs/.settings
 /bbs/build/classes
 
