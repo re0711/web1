@@ -255,8 +255,8 @@ where c.id = m.categoryId and u.id = m.sponsorId and b.id=m.bbsId
 and m.recipientId=#{id}
   </select>
 ``` 
-效果：如果不是自己回复自己的帖子，将收到提醒（如下图所示）  
- 
+效果：如果不是自己回复自己的帖子，将收到提醒（如下图所示）   
+![image](https://github.com/re0711/web1/blob/master/pic/1.png)
 ##### 消息数量显示  
  需求：header.jsp通过ajax查询未读信息数量  
 设置标记已读按钮  
@@ -264,7 +264,7 @@ and m.recipientId=#{id}
 ### 关注功能
 需求：点击关注按钮关注用户，可以在关注栏看到，对方可以在粉丝栏看到。  
 同时显示每个用户的关注量和粉丝量。  
- 
+![image](https://github.com/re0711/web1/blob/master/pic/2.png) 
 
 方案：  
 当你登录后并且未关注某人时 显示 按钮，关注某人后，显示 按钮，再次点击取消关注   
@@ -323,17 +323,9 @@ select bbs.id id1,bbs.title,bbs.createdAt,bbs.authorId,
 	```
 
 ### 一些截图
-首页：  
-
- 
-
-个人中心  
- 
-
-
-
-
-
-
-查看粉丝以及关注：  
- 
+首页：    
+![image](https://github.com/re0711/web1/blob/master/pic/3.png)
+个人中心:    
+![image](https://github.com/re0711/web1/blob/master/pic/4.png)
+查看粉丝以及关注：     
+![image](https://github.com/re0711/web1/blob/master/pic/5.png) 
