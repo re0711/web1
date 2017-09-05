@@ -1,0 +1,7 @@
+*.settings
+*.classpath
+*.tern-project
+*.project
+bbs/build/classes
+bbs/config
+bbs/.gitignore 
