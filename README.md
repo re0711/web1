@@ -21,7 +21,7 @@ Jdk版本：1.7
 关注或取消关注其他用户  
 
 ### 添加评论（未完成消息提醒前）
-...java
+```
 @RequestMapping(value="/addComment.action")
 	public String addComment(HttpSession session,Comment comment){
 		User loginUser = (User) session.getAttribute("loginUser");
@@ -40,7 +40,7 @@ Jdk版本：1.7
 		//返回帖子详情
 		return "redirect:/bbs_detail.action?id="+bbsid;
 	}
-...
+```
 ### 板块切换
 需求：可以切换不同的板块，显示属于板块的所有帖子
 @RequestMapping(value="/switchCategory.action")
