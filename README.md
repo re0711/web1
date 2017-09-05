@@ -325,12 +325,12 @@ select bbs.id id1,bbs.title,bbs.createdAt,bbs.authorId,
 	```
 
 ### 一些截图
-首页：   
+##### 首页：   
    
 ![image](https://github.com/re0711/web1/blob/master/pic/3.png)
-个人中心:   
+##### 个人中心:   
    
 ![image](https://github.com/re0711/web1/blob/master/pic/4.png)
-查看粉丝以及关注：  
+##### 查看粉丝以及关注：  
    
 ![image](https://github.com/re0711/web1/blob/master/pic/5.png) 
