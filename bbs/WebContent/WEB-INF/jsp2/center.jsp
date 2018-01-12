@@ -32,9 +32,9 @@
 		$("#gz").click(function(){
 			$(this).next().show()
 			$(this).hide()
-			//改变页面显示 1为增加 0为减少
+			//改变页面显示   1为增加 0为减少
 			change(1)
-			//更新数据库 1为增加 0为减少
+			//更新数据库   1为增加 0为减少
 			AddOrReduce(1)
 		})
 		

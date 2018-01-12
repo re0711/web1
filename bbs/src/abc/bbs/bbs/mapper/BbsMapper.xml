@@ -25,6 +25,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<association property="category" javaType="category">
 	<id property="id" column="cid"/>
 	<result property="name" column="name"/>
+	<result property="administratorid" column="administratorId"/>
 	</association>
 	</resultMap>
 
@@ -42,13 +43,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</select>
 
 	<select id="selectBbsById" parameterType="integer" resultMap="bbs">
-	
 	select bbs.id id1,bbs.title,bbs.createdAt,bbs.authorId,bbs.createdAt,bbs.content,bbs.commentCount,bbs.categoryId,
-	u.id,u.username,u.photo
+	u.id,u.username,u.photo,
+	c.id cid,c.name,c.administratorId
 	from
-	bbs,`user` u
+	bbs,`user` u,category c 
 	where
-	bbs.id = #{id} and bbs.authorId = u.id
+	bbs.id = #{id} and bbs.authorId = u.id and
+	bbs.categoryId = c.id
 	</select>
 	
 	<select id="insertComment" parameterType="comment">

@@ -6,6 +6,7 @@ import java.util.UUID;
 
 import javax.servlet.http.HttpSession;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,8 +26,6 @@ import abc.bbs.user.service.UserService;
 @Controller
 public class UserController {
 
-	private static final String User = null;
-
 	@Autowired
 	UserService userService;
 
@@ -44,7 +43,8 @@ public class UserController {
 
 	@RequestMapping(value = "/login.action")
 	public String login(Model model, User user, HttpSession session) {
-		if (user.getUsername().trim() == "" || user.getPassword().trim() == "") {
+		
+		if (StringUtils.isEmpty(user.getUsername()) || StringUtils.isEmpty(user.getPassword())) {
 			String msg = "用户名或密码不能为空";
 			model.addAttribute("msg", msg);
 			return "login";
@@ -91,31 +91,31 @@ public class UserController {
 
 	// 注册或修改用户
 	@RequestMapping(value = "/userSave.action")
-	public String userSave(Model model, User user, MultipartFile photo1,HttpSession session) throws Exception {
+	public String userSave(Model model, User user, MultipartFile photo1, HttpSession session) throws Exception {
 
-		//图片不为空，则添加图片
+		// 图片不为空，则添加图片
 		if (!photo1.isEmpty()) {
 			String picName = UUID.randomUUID().toString();
-			String path = "f:/haha/img/";
-			
-			//删除原先的图片（如果有的话）
-			User loginUser = (User)session.getAttribute("loginUser");
-			if(loginUser.getPhoto()!=null&&loginUser.getPhoto()!="f.jpg"){
-				new File(path+loginUser.getPhoto()).delete();
+			String path = "h:/haha/img/";
+
+			// 删除原先的图片（如果有的话）
+			User loginUser = (User) session.getAttribute("loginUser");
+			if (loginUser.getPhoto() != null && loginUser.getPhoto() != "f.jpg") {
+				new File(path + loginUser.getPhoto()).delete();
 			}
 
 			// 获取文件名
 			String oriName = photo1.getOriginalFilename();
 			// 获取图片后缀
 			String extName = oriName.substring(oriName.lastIndexOf("."));
-			
+
 			// 开始上传
 			photo1.transferTo(new File(path + picName + extName));
 
 			user.setPhoto(picName + extName);
 		}
 
-		//传了id，那么一定是更新，否则就是注册
+		// 传了id，那么一定是更新，否则就是注册
 		if (user.getId() != null) {
 			userService.updateUser(user);
 			return "redirect:/center.action?id=" + user.getId();
@@ -150,31 +150,31 @@ public class UserController {
 	public String toRegist() {
 		return "regist";
 	}
-	
-	//增或减粉丝数量
+
+	// 增或减粉丝数量
 	@RequestMapping(value = "/funCount.action")
 	public void funCount(UserFan fan) {
 		userService.opratefunCount(fan);
 	}
-	
-	//是否关联(显示关注 或 已关注 按钮)？
+
+	// 是否关联(显示关注 或 已关注 按钮)？
 	@RequestMapping(value = "/getFollow.action")
 	@ResponseBody
 	public String getFollow(UserFan fan) {
-		String status = userService.getFollow(fan);		
+		String status = userService.getFollow(fan);
 		return status;
 	}
-	
-	//查看粉丝或关注
+
+	// 查看粉丝或关注
 	@RequestMapping(value = "/showFanOrFollow.action")
-	//用户id fan follow
-	public String showFanOrFollow(HttpSession session, Model model,Integer id,String type) {
+	// 用户id fan follow
+	public String showFanOrFollow(HttpSession session, Model model, Integer id, String type) {
 		List<Category> categoryList = categoryService.selectAllCategory();
 		session.setAttribute("categoryList", categoryList);
-		UserFanVo vo =  userService.showFanOrFollow(id,type);
-		
+		UserFanVo vo = userService.showFanOrFollow(id, type);
+
 		model.addAttribute("bbsvo", vo);
-		model.addAttribute("type",type);
+		model.addAttribute("type", type);
 		return "followAndFan";
 	}
 

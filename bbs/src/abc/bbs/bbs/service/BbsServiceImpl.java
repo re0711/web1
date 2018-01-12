@@ -119,8 +119,8 @@ public class BbsServiceImpl implements BbsService {
 		List<Bbs> list = bbsMapper.selectBbsByQueryVo(vo);
 		Integer total =  bbsMapper.selectTotalCount(vo);
 		
+		//返回的bbs列表，通过Categoryid和getAuthorid()查询
 		for (Bbs bbs : list) {
-			//通过Categoryid和getAuthorid()查询
 			Category category = new Category();
 			category.setName(categoryMapper.selectCategoryById(bbs.getCategoryid()).getName());
 			bbs.setCategory(category);

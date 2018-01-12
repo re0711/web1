@@ -16,7 +16,6 @@ $(function(){
 			$(".red").text(data);
 		}
 		
-		
 	})
 	
 })

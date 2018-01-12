@@ -45,4 +45,5 @@ public interface BbsMapper {
 	public Integer selectTotalCount(BbsQueryVo vo);
 	
 	public List<Bbs> adminGetAllBbs();
+
 }

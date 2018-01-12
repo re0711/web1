@@ -2,8 +2,18 @@ package abc.bbs.user.pojo;
 
 public class User {
     private Integer id;
+    
+    private Integer roleId;
 
-    private String signature;
+    public Integer getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(Integer roleId) {
+		this.roleId = roleId;
+	}
+
+	private String signature;
 
     private String photo;
 

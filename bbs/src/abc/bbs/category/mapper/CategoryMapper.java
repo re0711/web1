@@ -9,4 +9,8 @@ public interface CategoryMapper {
 	public List<Category> selectAllCategory();
 
 	public Category selectCategoryById(Integer id);
+
+	public void addCategory(Category category);
+
+	public void updateCategory(Category category);
 }

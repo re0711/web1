@@ -30,7 +30,7 @@
 </head>
 
 <body class="">
-<c:if test="${bbs.authorid eq sessionScope.loginUser.id}">
+<c:if test="${not empty sessionScope.loginUser and (bbs.authorid eq sessionScope.loginUser.id or sessionScope.loginUser.id eq bbs.category.administratorid) }">
 <a id="btn_search" href="${pageContext.request.contextPath }/deleteBbs.action?bid=${bbs.id}" class="easyui-linkbutton" data-options="iconCls:'icon-cancel'" style="position:absolute;right:100px;top:80px;">删除</a>
     </c:if>
 	<div id="react-root">
@@ -143,10 +143,10 @@
 							赞
 						</button>
 						 <fmt:formatDate value="${comment.date}" pattern="yyyy-MM-dd HH:mm:ss"/>
-						 
-						 <c:if test="${sessionScope.loginUser.id eq comment.userid }">
+						 &nbsp;&nbsp;&nbsp;&nbsp;
+						 <c:if test="${not empty sessionScope.loginUser and (sessionScope.loginUser.id eq comment.userid or sessionScope.loginUser.id eq bbs.authorid or bbs.category.administratorid eq sessionScope.loginUser.id)}">
            
-           <a href="${pageContext.request.contextPath }/delectComment.action?id=${comment.id}&bid=${bbs.id}">delete</a>
+           <a href="${pageContext.request.contextPath }/delectComment.action?id=${comment.id}&bid=${bbs.id}">删除回复</a>
            </c:if>
 					</div>
 				</div>

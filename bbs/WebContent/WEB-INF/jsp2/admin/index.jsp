@@ -4,8 +4,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>god论坛后台管理系统</title>
+<script type="text/javascript">
+var tmp=${sessionScope.loginUser.roleId}
+console.log(1)
+
+if(tmp!==1){
+	
+	window.location.href='${pageContext.request.contextPath }/admin/toLogin.action'; 
+}
+</script>
 <script
 	src="${pageContext.request.contextPath }/statics/js/jquery-2.1.1.min.js"></script>
+	<script
+	src="${pageContext.request.contextPath }/statics/js/jquery-form.js"></script>
 <script
 	src="${pageContext.request.contextPath }/statics/js/jquery.easyui.min.js"></script>
 	<script
@@ -39,25 +50,25 @@
     <!-- 头部标题 -->
 	<div data-options="region:'north',border:false" style="height:60px; padding:5px; background:#F3F3F3"> 
 		<span class="northTitle">god论坛后台管理系统</span>
-	    <span class="loginInfo">登录用户：admin&nbsp;&nbsp;姓名：管理员&nbsp;&nbsp;角色：系统管理员</span>
+	    <span class="loginInfo">登录用户：${sessionScope.loginUser.username}&nbsp;&nbsp;角色：系统管理员</span>
 	</div>
     <div data-options="region:'west',title:'菜单',split:true" style="width:180px;">
     	<ul id="menu" class="easyui-tree" style="margin-top: 10px;margin-left: 5px;">
          	<li>
          		<span>论坛管理</span>
          		<ul>
-	         		<li data-options="attributes:{'url':'category-list'}">板块管理</li>
+	         		<li data-options="attributes:{'url':'category-list.action'}">板块管理</li>
 	         		<li data-options="attributes:{'url':'bbs-list.action'}">帖子管理</li>
 	         	</ul>
          	</li>
-         	<li>
+         	<!-- <li>
          		<span>网站内容管理</span>
          		<ul>
 	         		<li data-options="attributes:{'url':'content-category'}">内容分类管理</li>
 	         		<li data-options="attributes:{'url':'content'}">内容管理</li>
 	         	</ul>
          	</li>
-         	
+         	 -->
          </ul>
     </div>
     <div data-options="region:'center',title:''">
@@ -73,7 +84,9 @@
 	    <span id="nowTime"></span>
 	</div>
 <script type="text/javascript">
+
 $(function(){
+	
 	$('#menu').tree({
 		onClick: function(node){
 			if($('#menu').tree("isLeaf",node.target)){

@@ -6,11 +6,20 @@ import abc.bbs.user.pojo.User;
 
 public class BbsQueryVo {
 	private List<Bbs> bbsList;
-	
+
 	private Bbs bbs;
-	
+
 	private User user;
-	
+
+	private Integer userBbsCount;
+
+	// 当前页
+	private Integer page;
+	// 每页数
+	private Integer size = 10;
+	// 开始行
+	private Integer startRow = 0;
+
 	public User getUser() {
 		return user;
 	}
@@ -35,41 +44,30 @@ public class BbsQueryVo {
 		this.userBbsCount = userBbsCount;
 	}
 
-	private Integer userBbsCount;
-	
-	//当前页
-		private Integer page;
-		//每页数
-		private Integer size = 10; 
-		//开始行
-		private Integer startRow = 0;
-
-
 	public Integer getPage() {
-			return page;
-		}
+		return page;
+	}
 
-		public void setPage(Integer page) {
-			this.page = page;
-		}
+	public void setPage(Integer page) {
+		this.page = page;
+	}
 
-		public Integer getSize() {
-			return size;
-		}
+	public Integer getSize() {
+		return size;
+	}
 
-		public void setSize(Integer size) {
-			this.size = size;
-		}
+	public void setSize(Integer size) {
+		this.size = size;
+	}
 
-		public Integer getStartRow() {
-			return startRow;
-		}
+	public Integer getStartRow() {
+		return startRow;
+	}
 
-		public void setStartRow(Integer startRow) {
-			this.startRow = startRow;
-		}
+	public void setStartRow(Integer startRow) {
+		this.startRow = startRow;
+	}
 
-	
 	public Bbs getBbs() {
 		return bbs;
 	}

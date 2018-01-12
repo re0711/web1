@@ -16,7 +16,6 @@
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/toCreateBbs.action"/>
-			<!-- 配置具体的拦截器 -->
 			<bean class="abc.bbs.bbs.interceptor.BbsInterceptor" />
 		</mvc:interceptor>
 	</mvc:interceptors>

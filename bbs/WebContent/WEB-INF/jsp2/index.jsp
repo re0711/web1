@@ -82,17 +82,18 @@
 								id="feed-0">
 								<div class="feed-item-inner">
 									<div class="avatar">
-										<a class="zm-item-link-avatar" href="${pageContext.request.contextPath }/center.action?id=${bbs.user.id}"
+										<a class="zm-item-link-avatar"
+											href="${pageContext.request.contextPath }/center.action?id=${bbs.user.id}"
 											target="_blank"> <img src="/pic/${bbs.user.photo }"
 											class="side-topic-avatar">
 										</a>
 									</div>
 									<div class="feed-main">
-										<div class="feed-source" >
+										<div class="feed-source">
 											来自: <a href="#">${bbs.category.name }</a>
 
 										</div>
-										<div class="feed-content" >
+										<div class="feed-content">
 											<h2 class="feed-title">
 												<a class="question_link"
 													href="${pageContext.request.contextPath }/bbs_detail.action?id=${bbs.id}"
@@ -109,7 +110,7 @@
 
 												<div class="zm-item-vote">
 													<a class="zm-item-vote-count js-expand js-vote-count"
-														href="javascript:;" >88</a>
+														href="javascript:;">88</a>
 												</div>
 
 												<div class="zm-votebar goog-scrollfloater"
@@ -149,9 +150,9 @@
 														</a> <a href="#" name="addcomment"
 															class="meta-item toggle-comment js-toggleCommentBox">
 															<i class="z-icon-comment"></i>${bbs.commentCount } 条评论
-														</a> <a href="#" class="meta-item zu-autohide js-thank"
-															><i class="z-icon-thank"></i>感谢</a> <a
-															href="#" class="meta-item zu-autohide js-collect"><i
+														</a> <a href="#" class="meta-item zu-autohide js-thank"><i
+															class="z-icon-thank"></i>感谢</a> <a href="#"
+															class="meta-item zu-autohide js-collect"><i
 															class="z-icon-collect"></i>收藏</a> <span class="zg-bull">•</span>
 														<a href="/terms#sec-licence-1" target="_blank"
 															class="meta-item copyright"> 作者保留权利 </a>
@@ -177,9 +178,9 @@
 			</div>
 		</div>
 
-		<div class="zu-main-sidebar" >
+		<div class="zu-main-sidebar">
 
-			<div class="shameimaru-placeholder" ></div>
+			<div class="shameimaru-placeholder"></div>
 
 		</div>
 
@@ -195,8 +196,8 @@
 						<tr>
 							<td>Author:</td>
 							<td><input class="easyui-textbox" type="text"
-								name="bbs.user.username" id="username" data-options="required:true">
-								</input></td>
+								name="bbs.user.username" id="username"
+								data-options="required:true"> </input></td>
 						</tr>
 
 						<tr>

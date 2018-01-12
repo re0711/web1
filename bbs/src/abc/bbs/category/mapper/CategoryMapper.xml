@@ -10,4 +10,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="selectCategoryById" parameterType="integer" resultType="category">
 		select * from category where id= #{id}
 	</select>
+	<insert id="addCategory" parameterType="category">
+	insert into category(name,administratorId) values(#{name},#{administratorid});
+	</insert>
+	<update id="updateCategory" parameterType="category">
+	update category set name=#{name},administratorId=#{administratorid} where id=#{id}
+	</update>
+	
 </mapper>

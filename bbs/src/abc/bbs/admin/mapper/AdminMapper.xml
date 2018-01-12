@@ -13,4 +13,17 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</foreach>
 	</where>
 	</delete>
+	
+	<select id="login" parameterType="user" resultType="user">
+	select * from user
+	<where>
+	<if test="username != null ">
+				AND username = #{username}
+			</if>
+			<if test="password != null ">
+				AND password = #{password}
+			</if>
+			AND roleId=1;
+	</where>
+	</select>
 </mapper>
