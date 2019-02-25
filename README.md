@@ -21,7 +21,7 @@ A minimal forum application built with the following technologies:
 ### screenshorts
 ##### Homepage   
    
-![image](https://github.com/re0711/web1/blob/master/pic/3.png)
+![image](https://github.com/re0711/web1/blob/master/pic/index.png)
 
 ##### 个人中心:   
    
