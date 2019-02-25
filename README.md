@@ -1,4 +1,3 @@
-
 # GodForum
 A minimal forum application built with the following technologies:
 * Spring
@@ -19,22 +18,22 @@ A minimal forum application built with the following technologies:
 * Admin have a lot of power over every users discussions and opinions
  
 ### screenshorts
-##### *homepage   
+##### homepage   
    
 ![image](https://github.com/re0711/web1/blob/master/pic/index.PNG)
 
-##### *user center  
+##### user center  
    
 ![image](https://github.com/re0711/web1/blob/master/pic/center.png)
 
-##### *Posting interface   
+##### posting interface   
    
-![image](https://github.com/re0711/web1/blob/master/pic/post.png) 
+![image](https://github.com/re0711/web1/blob/master/pic/write.png) 
 
-##### *post detail page 
+##### bbs detail page 
 
-![image](https://github.com/re0711/web1/blob/master/pic/datail.png) 
+![image](https://github.com/re0711/web1/blob/master/pic/datail.PNG) 
 
-##### *admin page 
+##### admin page 
 
-![image](https://github.com/re0711/web1/blob/master/pic/admin.png) 
+![image](https://github.com/re0711/web1/blob/master/pic/admin.PNG) 
