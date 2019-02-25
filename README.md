@@ -22,9 +22,11 @@ A minimal forum application built with the following technologies:
 ##### Homepage   
    
 ![image](https://github.com/re0711/web1/blob/master/pic/3.png)
+
 ##### 个人中心:   
    
 ![image](https://github.com/re0711/web1/blob/master/pic/4.png)
+
 ##### 查看粉丝以及关注：  
    
 ![image](https://github.com/re0711/web1/blob/master/pic/5.png) 
