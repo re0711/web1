@@ -1,25 +1,25 @@
-## 环境
-开发环境：Eclipse_mars  
-数据库管理工具：mysql5.5  
-Jdk版本：1.7  
-服务器:tomcat 7  
-## 已实现的主要功能
-登录 登出 注册  
-加载首页（查看分类，帖子）   
-查看帖子详情（查看帖子详情和评论）  
-添加、删除评论（登录的用户可以操作、只能删自己的评论）  
-板块切换  
-判断是否登录（使用某些功能如果未登录，跳转到登录页面）  
-发帖 删帖（只能删自己的帖子）  
-个人中心（查看个人信息和发的帖子）  
-个人信息编辑（包括上传图片 用户名重复校验以及其他校验）  
-按条件搜索帖子(标题，板块，作者)  
-消息中心（查看别人对你的帖子的回复，有新消息时提醒）  
-后台管理（删除帖子）  
-关注或取消关注其他用户  
 
-### 一些截图
-##### 首页：   
+# ReForum
+A minimal forum application built with the following technologies:
+* Spring
+* SpringMVC
+* MyBatis
+* MySQL
+* JQuery
+
+### Application Features
+* Users can register,sign in and log out
+* Users can post a discussion
+* Users can reply their opinions regarding discussion
+* Users can search a post
+* Users have their own profile page
+* Users can follow each other
+* The Notification Center 
+* Admin can create new forum categories
+* Admin have a lot of power over every users discussions and opinions
+ 
+### screenshorts
+##### Homepage   
    
 ![image](https://github.com/re0711/web1/blob/master/pic/3.png)
 ##### 个人中心:   
