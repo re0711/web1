@@ -19,14 +19,22 @@ A minimal forum application built with the following technologies:
 * Admin have a lot of power over every users discussions and opinions
  
 ### screenshorts
-##### Homepage   
+##### *homepage   
    
 ![image](https://github.com/re0711/web1/blob/master/pic/index.PNG)
 
-##### 个人中心:   
+##### *user center  
    
-![image](https://github.com/re0711/web1/blob/master/pic/4.png)
+![image](https://github.com/re0711/web1/blob/master/pic/center.png)
 
-##### 查看粉丝以及关注：  
+##### *Posting interface   
    
-![image](https://github.com/re0711/web1/blob/master/pic/5.png) 
+![image](https://github.com/re0711/web1/blob/master/pic/post.png) 
+
+##### *post detail page 
+
+![image](https://github.com/re0711/web1/blob/master/pic/datail.png) 
+
+##### *admin page 
+
+![image](https://github.com/re0711/web1/blob/master/pic/admin.png) 
