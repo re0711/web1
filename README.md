@@ -18,22 +18,22 @@ A minimal forum application built with the following technologies:
 * Admin have a lot of power over every users discussions and opinions
  
 ### screenshorts
-#### homepage   
+* homepage   
    
 ![image](https://github.com/re0711/web1/blob/master/pic/index.PNG)
 
-#### user center  
+* user center  
    
 ![image](https://github.com/re0711/web1/blob/master/pic/center.png)
 
-#### posting interface   
+* posting interface   
    
 ![image](https://github.com/re0711/web1/blob/master/pic/write.png) 
 
-#### bbs detail page 
+* bbs detail page 
 
 ![image](https://github.com/re0711/web1/blob/master/pic/detail.PNG) 
 
-#### admin page 
+* admin page 
 
 ![image](https://github.com/re0711/web1/blob/master/pic/admin.PNG) 
