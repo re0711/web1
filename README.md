@@ -1,5 +1,5 @@
 
-# ReForum
+# GodForum
 A minimal forum application built with the following technologies:
 * Spring
 * SpringMVC
