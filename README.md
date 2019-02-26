@@ -10,7 +10,7 @@ A minimal forum application built with the following technologies:
 * Users can register,sign in and log out
 * Users can post a discussion
 * Users can reply their opinions regarding discussion
-* Users can search a post
+* Users can search for posts
 * Users have their own profile page
 * Users can follow each other
 * The Notification Center 
