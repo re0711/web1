@@ -35,7 +35,7 @@ A minimal forum application built with the following technologies:
 
 * bbs detail page 
 
-![image](https://github.com/re0711/web1/blob/master/pic/detail.PNG) 
+![image](https://github.com/re0711/web1/blob/master/pic/de.PNG) 
 
 
 * admin page 
