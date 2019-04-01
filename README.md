@@ -1,7 +1,9 @@
-# GodForum
-A minimal forum application built with the following technologies:
-* MySQL
-* JQuery
+# AlexForum
+
+### Frameworks and Tools
+* Java&IDE: JDK8 Eclipse
+* Database: MySQL5.7
+* Web Server: Tomcat8
 
 ### Application Features
 * Users can register,sign in and log out
