@@ -19,18 +19,15 @@
 ## Screenshorts
 ### homepage  
 
-<img src="github.com/re0711/web1/raw/master/images/bbsDetail.PNG" alt="bbsDetail.PNG">
+<img src="https://raw.githubusercontent.com/re0711/web1/master/images/index.PNG" width="375px">
 ### user center  
    
-![image](https://github.com/re0711/web1/blob/master/images/center.PNG)
-
+<img src="https://raw.githubusercontent.com/re0711/web1/master/images/center.PNG" width="375px">
 
 ### posting interface   
    
-![image](https://github.com/re0711/web1/blob/master/images/pub.PNG) 
-
+<img src="https://raw.githubusercontent.com/re0711/web1/master/images/pun.PNG" width="375px">
 
 ### bbs detail page 
-
-![image](https://github.com/re0711/web1/blob/master/images/bbsDetail.PNG) 
-
+ 
+<img src="https://raw.githubusercontent.com/re0711/web1/master/images/bbsDetail.PNG" width="375px">
