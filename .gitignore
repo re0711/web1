@@ -3,8 +3,8 @@
 .project
 .gitignore
 .gitignore.bak
-/bbs/.settings
-/bbs/build/classes
-/pic/
+/bbs1/.settings
+/bbs1/build/classes
+/images/
 
  
