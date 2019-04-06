@@ -24,19 +24,15 @@
 
 * user center  
    
-![image](https://github.com/re0711/web1/blob/master/pic/center.png)
+![image](https://github.com/re0711/web1/blob/master/pic/center.PNG)
 
 
 * posting interface   
    
-![image](https://github.com/re0711/web1/blob/master/pic/write.png) 
+![image](https://github.com/re0711/web1/blob/master/pic/write.PNG) 
 
 
 * bbs detail page 
 
-![image](https://github.com/re0711/web1/blob/master/pic/de.PNG) 
+![image](https://github.com/re0711/web1/blob/master/pic/bbsDetail.PNG) 
 
-
-* admin page 
-
-![image](https://github.com/re0711/web1/blob/master/pic/admin.PNG) 
