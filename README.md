@@ -17,7 +17,7 @@
 * Admin have a lot of power over every users discussions and opinions
  
 ## Screenshorts
-#### homepage  
+* homepage  
 
 ![image](https://github.com/re0711/web1/blob/master/pic/index.PNG)
 
