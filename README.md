@@ -29,7 +29,7 @@
 
 * posting interface   
    
-![image](https://github.com/re0711/web1/blob/master/images/write.PNG) 
+![image](https://github.com/re0711/web1/blob/master/images/pub.PNG) 
 
 
 * bbs detail page 
