@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="abc.bbs.excel.mapper.ExportMapper">
+	<select id="findUser" resultType="abc.bbs.excel.pojo.Export">
+		select age,fanCount,followCount,gender,photo,signature,username
+		from bbs.user; 
+	</select>
+</mapper>

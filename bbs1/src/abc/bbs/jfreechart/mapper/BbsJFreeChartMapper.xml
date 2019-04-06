@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="abc.bbs.jfreechart.mapper.BbsJFreeChartMapper">
+	
+	<select id="findBbsByCategory" resultType="bbsJFreeChart">
+		SELECT name AS categoryName,(
+			SELECT COUNT(*) 
+			FROM bbs WHERE category.`id`=bbs.`categoryId`) AS count 
+		FROM category ;
+	</select>
+	
+	<select id="findBbsByYearAndCategory" resultType="bbsJFreeChart">
+		SELECT bbs.dt,bbs.name AS categoryName,COUNT(*) AS COUNT FROM(
+			SELECT YEAR(bbs.createdAt) dt,category.name NAME FROM bbs,category
+			WHERE bbs.categoryId=category.id
+			)bbs
+		GROUP BY bbs.dt,bbs.name;
+	</select>
+	
+</mapper>
