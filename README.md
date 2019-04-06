@@ -1,11 +1,11 @@
 # PerForum
 
-### Frameworks and Tools
+## Frameworks and Tools
 * Java&IDE: JDK8 Eclipse
 * Database: MySQL5.7
 * Web Server: Tomcat8
 
-### Application Features
+## Application Features
 * Users can register,sign in and log out
 * Users can post a discussion
 * Users can reply their opinions regarding discussion
@@ -16,9 +16,9 @@
 * Admin can create new forum categories
 * Admin have a lot of power over every users discussions and opinions
  
-### screenshorts
-* homepage   
-   
+## Screenshorts
+#### homepage  
+
 ![image](https://github.com/re0711/web1/blob/master/pic/index.PNG)
 
 
