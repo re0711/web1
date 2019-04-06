@@ -17,9 +17,9 @@
 * Admin have a lot of power over every users discussions and opinions
 
 ## Quick Start
-1.Create a MySQL database and import 'bbs.sql'
-2.Edit file:'config/jdbc.properties'.
-3.Open your brower and visit: http://localhost:8080/bbs/index.action or http://localhost:8080/bbs/admin/index.action (PS: The sesond URL is for forum adminstrator and the page of it haven't been internationlized.)
+1.Create a MySQL database and import 'bbs.sql'.    
+2.Edit file:'config/jdbc.properties'.  
+3.Open your brower and visit: http://localhost:8080/bbs/index.action or http://localhost:8080/bbs/admin/index.action (PS: The second URL is for forum adminstrator and it haven't been internationlized.)
   
  
 ## Screenshorts
