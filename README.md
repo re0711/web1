@@ -17,22 +17,21 @@
 * Admin have a lot of power over every users discussions and opinions
  
 ## Screenshorts
-* homepage  
+#### homepage  
 
 ![image](https://github.com/re0711/web1/blob/master/images/index.PNG)
 
-
-* user center  
+#### user center  
    
 ![image](https://github.com/re0711/web1/blob/master/images/center.PNG)
 
 
-* posting interface   
+#### posting interface   
    
 ![image](https://github.com/re0711/web1/blob/master/images/pub.PNG) 
 
 
-* bbs detail page 
+#### bbs detail page 
 
 ![image](https://github.com/re0711/web1/blob/master/images/bbsDetail.PNG) 
 
