@@ -15,6 +15,7 @@ Date: 2019-04-06 21:57:21
 
 SET FOREIGN_KEY_CHECKS=0;
 
+
 -- ----------------------------
 -- Table structure for user
 -- ----------------------------
