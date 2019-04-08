@@ -19,7 +19,7 @@
 ## Quick Start
 1.Create a MySQL database and import 'sql/bbs.sql'.    
 2.Edit file:'bbs1/config/jdbc.properties'.  
-3.Open your brower and visit: http://localhost:8080/bbs1/index.action or http://localhost:8080/bbs1/admin/index.action (PS: The second URL is for forum adminstrator and it haven't been internationlized.)
+3.Open your brower and visit: http://localhost:8080/bbs1/index.action or http://localhost:8080/bbs1/admin/index.action (PS: The second URL is for forum adminstrator and it hasn't been internationlized.)
   
  
 ## Screenshorts
